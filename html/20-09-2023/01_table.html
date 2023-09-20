@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- table is a collection of row and column
+        horizontal = row, vertical = column 
+        cell = it is created box with combination of row and column
+    -->
+    <!-- style = border-color, background-color, color, height, width, text-align -->
+    <!-- 
+        to create table used <table> tag
+        to create row => <tr> tag (table row)
+        to create column => <td> tag (table data)
+        to create table column heading => <th> tag (table heading)
+        to give a title of table => <caption> tag 
+        to set table body => <tbody> tag 
+        to set table footer => <tfoot> tag
+
+        cellpadding = give a space between content and cell border
+        cellspacing = give a space between two cells
+        when we apply rules cellspacing not worked.
+     -->
+    <table border="1" cellpadding="5px" cellspacing="2px" rules="all"
+        style="width: 300px; height: 200px;text-align: center; border-color: green;">
+        <!-- 1st row -->
+        <tr style="background-color: rgb(255, 166, 0);">
+            <th>Sr. No</th>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Team</th>
+        </tr>
+        <tbody>
+            <!-- 2nd row -->
+            <tr>
+                <th>1</th>
+                <td>1001</td>
+                <td>Rohit</td>
+                <td>Red</td>
+            </tr>
+            <!-- 3rd row -->
+            <tr>
+                <th>2</th>
+                <td>1002</td>
+                <td>Rahul</td>
+                <td>Green</td>
+            </tr>
+            <!-- 4th row -->
+            <tr>
+                <th>3</th>
+                <td>1003</td>
+                <td>Poonam</td>
+                <td>Blue</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
