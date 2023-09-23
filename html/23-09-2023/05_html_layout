@@ -1,0 +1,9 @@
+according to layout there are 2 type of tag 
+(1) sementic tag 
+= <header>, <footer>, <section>, <p>, <img> etc 
+
+(2) non-sementic tag 
+= <div> and <span>
+
+html layout tag : 
+<header>, <footer>, <section>, <div>, <span>, <aside>, <article>, <main>, <nav>

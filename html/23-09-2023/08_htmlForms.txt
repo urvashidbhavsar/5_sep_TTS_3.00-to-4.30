@@ -1,0 +1,12 @@
+html forms 
+
+(1) form tag = <form>
+(2) input tag 
+    input type (older) = text, radio, checkbox, submit, reset, password, number etc..
+
+    input type (new) = date, time, datetime, datetime-local, week, month, range, color, email etc
+
+(3) textarea 
+(4) select-option = which is also called as dropdown menu 
+(5) datalist(new) = provide suggession list 
+(6) button 
