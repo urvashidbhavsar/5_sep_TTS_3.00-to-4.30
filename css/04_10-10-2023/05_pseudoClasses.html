@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pseudo classes are start with (:) symbol */
+        .link1:link {
+            color: blue;
+        }
+
+        .link2:active {
+            color: green;
+        }
+
+        .link3:visited {
+            color: purple;
+        }
+
+        .link4:hover {
+            color: rgb(86, 5, 21);
+        }
+
+        button {
+            height: 30px;
+            width: 100px;
+            background-color: blue;
+            border: 2px solid blue;
+            color: white;
+        }
+
+        button:hover {
+            background-color: white;
+            color: blue;
+        }
+
+        input {
+            border: 2px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        /* also apply in column */
+        /* tr:nth-child(odd) {
+            background-color: palevioletred;
+        } */
+
+        /* tr :nth-child(even) {
+            background-color: palegreen;
+        } */
+        tr:first-child {
+            background-color: palevioletred;
+        }
+
+        tr:last-child {
+            background-color: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#" class="link1">Click here</a> <br>
+    <a href="#" class="link2">Click here</a> <br>
+    <a href="#" class="link3">Click here</a> <br>
+    <a href="#" class="link4">Click here</a> <br>
+    <button>click here</button> <br> <br>
+    enter value : <input type="text" name="" id=""><br> <br>
+    <table border="1">
+        <tr>
+            <td>abc</td>
+            <td>xyz</td>
+            <td>mno</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>xyz</td>
+            <td>mno</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>xyz</td>
+            <td>mno</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>xyz</td>
+            <td>mno</td>
+            <td>abc</td>
+        </tr>
+    </table>
+</body>
+
+</html>
