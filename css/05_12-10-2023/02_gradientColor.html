@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 20px;
+        }
+
+        .div1 {
+            /* set a direction = to bottom(default), to top, to left, to right */
+            /* change direction with degree value */
+            background-image: linear-gradient(40deg, blue 61px, red 169px, green 254px)
+        }
+
+        .div2 {
+            /* to change direction = circle at center(default), circle at top, circle at bottom, circle at left, cirlce at right */
+            background: radial-gradient(circle at top, blue 60px, red 131px, green 169px);
+        }
+
+        .div3 {
+            background: conic-gradient(blue 46deg, red 178deg, green 306deg, blue 359deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- combination of two or more colors it called gradient 
+        there is 3 types : linear, radial, conic
+    -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+
+</html>
