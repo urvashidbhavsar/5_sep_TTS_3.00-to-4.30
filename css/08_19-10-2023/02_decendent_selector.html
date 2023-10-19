@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        .div2 {
+            border: 1px solid black;
+            margin: 5px;
+        }
+        /* parent child */
+        .div1 p {
+            color: blue;
+        }
+
+        .div1 p b {
+            color: green;
+        }
+
+        .div2 p {
+            color: red;
+        }
+
+        .div2 p a {
+            color: rgb(60, 220, 20);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque esse saepe alias vero odit <b>reiciendis
+                ratione.</b>
+            Quas sed consequatur, minima nulla cum, repudiandae quia accusantium beatae excepturi non suscipit nihil.
+        </p>
+    </div>
+    <div class="div2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit impedit at quae vero <a href="">deserunt
+                voluptate</a>
+            reiciendis est accusantium vitae. Quae fuga quos ratione fugiat odit mollitia nostrum est architecto quidem!
+        </p>
+    </div>
+</body>
+
+</html>
