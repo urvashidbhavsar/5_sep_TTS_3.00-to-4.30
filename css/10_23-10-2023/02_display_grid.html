@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            /* grid-template-rows: ; => default set row */
+            /* grid-template-columns: auto auto auto auto auto; */
+            /* grid-template-columns: 1fr 1fr 4fr 1fr 1fr; */
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .div1 {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+        }
+
+        .div2 {
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display grid use to set table form data -->
+    <div class="main">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div1">Div 2</div>
+        <div class="div2">Div 4</div>
+        <div class="div1">Div 5</div>
+        <div class="div2">Div 6</div>
+        <div class="div1">Div 7</div>
+        <div class="div2">Div 8</div>
+        <div class="div1">Div 9</div>
+        <div class="div2">Div 10</div>
+    </div>
+</body>
+
+</html>
