@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            padding: 10px;
+            display: grid;
+            /* place-items: center; */
+            /* both apply in parent class */
+            /* place-content  => when we apply display flex then place-content only set horizontally */
+            /* place-content & place-items => when we apply display grid then both set horizontally & vertically */
+
+            /* place-item  => when we apply display flex then place-item only set vertically */
+        }
+
+        .subdiv {
+            height: 50px;
+            width: 50px;
+            background-color: blueviolet;
+            place-self: center;
+            /* place-self =>  when we apply display flex then place-content only set vertically*/
+            /* place-self => when we apply display grid then place-self set horizontally & vertically */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+        <div class="subdiv"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .div2 {
+            grid-column-start: 2;
+            grid-column-end: span 2;
+        }
+
+        .div1 {
+            grid-row-start: 1;
+            grid-row-start: span 3;
+        }
+
+        .div4 {
+            grid-row: 1 / span 2;
+            grid-column: 5;
+            height: 100% !important;
+        }
+
+        .div9 {
+            grid-row: 3;
+            grid-column: 3/span 2;
+        }
+
+        .div1,
+        .div3,
+        .div5,
+        .div7,
+        .div9 {
+            height: 100%;
+            width: 100%;
+            background-color: chocolate;
+            font-size: 25px;
+        }
+
+        .div2,
+        .div4,
+        .div6,
+        .div8,
+        .div10 {
+            height: 100px;
+            width: 100%;
+            background-color: coral;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+        <div class="div9">9</div>
+        <div class="div10">10</div>
+    </div>
+</body>
+
+</html>
