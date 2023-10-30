@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: saddlebrown;
+            margin: 10px auto;
+            transition: 1s ease all;
+        }
+
+        .div1:hover {
+            transform: translate(-30px, 50px);
+        }
+
+        .div2:hover {
+            transform: translateX(-50px);
+        }
+
+        .div3:hover {
+            transform: translateY(30px);
+        }
+
+        .div4:hover {
+            transform: translateZ(30px);
+        }
+
+        .div5:hover {
+            transform: translate3d(30px, 30px, 60px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">translate</div>
+    <div class="div2">translateX</div>
+    <div class="div3">translateY</div>
+    <div class="div4">translateZ</div>
+    <div class="div5">translate3d</div>
+</body>
+
+</html>

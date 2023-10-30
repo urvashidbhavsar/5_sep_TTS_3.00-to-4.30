@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: saddlebrown;
+            margin: 10px auto;
+            transition: 1s ease all;
+        }
+
+        .div1:hover {
+            transform: skew(20deg, -20deg);
+        }
+
+        .div2:hover {
+            transform: skewX(40deg);
+        }
+
+        .div3:hover {
+            transform: skewY(50deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">skew</div>
+    <div class="div2">skewX</div>
+    <div class="div3">skewY</div>
+</body>
+
+</html>
