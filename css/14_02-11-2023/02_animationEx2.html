@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            /* border: 1px solid black; */
+            width: 50%;
+            height: 400px;
+            margin: 100px auto;
+        }
+
+        .circle {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .subdiv {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+
+        .left {
+            background-color: crimson;
+            animation: leftmove 1s ease-in-out infinite alternate;
+        }
+
+        .right {
+            background-color: darkorchid;
+            animation: rightmove 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes leftmove {
+
+            0% {
+                transform: translateX(0);
+                border-radius: 50%;
+            }
+
+            95% {
+                transform: translateX(100px);
+                border-radius: 50%;
+            }
+
+            100% {
+                transform: translateX(107px);
+                border-radius: 117% 85% 52% 200%;
+            }
+        }
+
+        @keyframes rightmove {
+
+            0% {
+                transform: translateX(0);
+                border-radius: 50%;
+            }
+
+            95% {
+                transform: translateX(-100px);
+                border-radius: 50%;
+            }
+
+            100% {
+                transform: translateX(-107px);
+                border-radius: 85% 117% 200% 52%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="circle">
+            <div class="subdiv left"></div>
+            <div class="subdiv right"></div>
+        </div>
+    </div>
+</body>
+
+</html>

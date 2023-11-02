@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(74, 119, 255);
+        }
+
+        .main {
+            height: 200px;
+            width: 250px;
+            margin: 200px auto;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            /* border: 1px solid; */
+            gap: 10px;
+        }
+
+        .sticks {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            animation: setAnimate 5s linear infinite;
+        }
+
+        .div {
+            background-color: white;
+            width: 10px;
+            border-radius: 10px;
+        }
+
+        .div1,
+        .div11 {
+            height: 50px;
+            animation: sticksmove 1s linear 0.20s infinite alternate;
+        }
+
+        .div2,
+        .div10 {
+            height: 70px;
+            animation: sticksmove 1s linear 0.30s infinite alternate;
+        }
+
+        .div3,
+        .div9 {
+            height: 90px;
+            animation: sticksmove 1s linear 0.40s infinite alternate;
+        }
+
+        .div4,
+        .div8 {
+            height: 110px;
+            animation: sticksmove 1s linear 0.50s infinite alternate;
+        }
+
+        .div5,
+        .div7 {
+            height: 130px;
+            animation: sticksmove 1s linear 0.60s infinite alternate;
+        }
+
+        .div6 {
+            height: 150px;
+            animation: sticksmove 1s linear 0.70s infinite alternate;
+        }
+
+        .div12,
+        .div0 {
+            height: 30px;
+            animation: sticksmove 1s linear infinite alternate;
+        }
+
+        @keyframes setAnimate {
+            0% {
+                transform: translateX(0px);
+            }
+
+            100% {
+                transform: translateX(240px);
+            }
+        }        @keyframes sticksmove {
+            0% {
+                transform: scaleY(1);
+            }
+
+            100% {
+                transform: scaleY(1.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sticks">
+            <div class="div div0"></div>
+            <div class="div div1"></div>
+            <div class="div div2"></div>
+            <div class="div div3"></div>
+            <div class="div div4"></div>
+            <div class="div div5"></div>
+            <div class="div div6"></div>
+            <div class="div div7"></div>
+            <div class="div div8"></div>
+            <div class="div div9"></div>
+            <div class="div div10"></div>
+            <div class="div div11"></div>
+            <div class="div div12"></div>
+        </div>
+        <div class="sticks">
+            <div class="div div0"></div>
+            <div class="div div1"></div>
+            <div class="div div2"></div>
+            <div class="div div3"></div>
+            <div class="div div4"></div>
+            <div class="div div5"></div>
+            <div class="div div6"></div>
+            <div class="div div7"></div>
+            <div class="div div8"></div>
+            <div class="div div9"></div>
+            <div class="div div10"></div>
+            <div class="div div11"></div>
+            <div class="div div12"></div>
+        </div>
+        <div class="sticks">
+            <div class="div div0"></div>
+            <div class="div div1"></div>
+            <div class="div div2"></div>
+            <div class="div div3"></div>
+            <div class="div div4"></div>
+            <div class="div div5"></div>
+            <div class="div div6"></div>
+            <div class="div div7"></div>
+            <div class="div div8"></div>
+            <div class="div div9"></div>
+            <div class="div div10"></div>
+            <div class="div div11"></div>
+            <div class="div div12"></div>
+        </div>
+    </div>
+</body>
+
+</html>
