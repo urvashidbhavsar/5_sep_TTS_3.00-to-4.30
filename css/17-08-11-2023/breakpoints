@@ -1,0 +1,13 @@
+breakpoints means break a screen content.
+other word, it means set responsive website.
+
+size 
+(1) mobile device       (extra small screen)               max-width : 576px
+(2) max mobile device   (small screen)                     min-width : 576px 
+(3) tablet device       (medium screen)                    min-width : 768px
+(4) mini leptop screen  (large screen)                     min-width : 992px
+(5) medium leptop screen  (extra large)                    min-width : 1200px 
+(6) tv screen           (extra extra large)                min-width : 1400px
+
+max = means one type of range 
+min = out of range 
