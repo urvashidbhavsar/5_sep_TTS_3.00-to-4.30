@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.paddg{
+    padding: 40px 10px;
+}
+.DesignSec .FlexBox{
+    display: flex;
+    gap: 50px;
+}
+.DesignSec .image{
+    flex: 1;
+}
+.DesignSec .image img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.DesignSec .DesignText{
+    flex: 1;
+}
+.DesignSec .DesignText h1{
+    font-size:calc(2.5vw + 20px);
+    font-weight: 500;
+}
+.DesignSec .DesignText .divider{
+    height: 3px;
+    width: 18%;
+    background-color: rgb(3, 41, 48);
+    margin: 13px 0px;
+}
+.DesignSec .DesignText p{
+    color: gray;
+    line-height: 26px;
+}
+.DesignSec .DesignText .progress{
+    display: grid;
+    gap: 30px;
+    padding: 30px 0px;
+}
+.DesignSec .DesignText .progress h4{
+    font-weight: 500;
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+.DesignSec .DesignText .progress .prg1{
+    height: 5px;
+    width: 100%;
+    background-color: rgb(3, 41, 48);
+    border-radius: 40px;
+}
+.DesignSec .DesignText .progress .prg2{
+    height: 5px;
+    width: 80%;
+    background-color: rgb(3, 41, 48);
+    border-radius: 40px;
+}
+
+/* ========= media query =========== */
+@media (max-width:576px) {
+    .DesignSec .FlexBox{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (min-width:576px) {
+    .DesignSec .FlexBox{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* 768 inherit value */
+@media (min-width:992px) {
+    .DesignSec .FlexBox{
+        flex-direction: row;
+        gap: 50px;
+    }
+}
