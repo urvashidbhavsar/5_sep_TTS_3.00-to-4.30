@@ -1,0 +1,83 @@
+@media (max-width:576px) {
+    header .navbar .icons .barbtn{
+        display: block;
+    }
+    header .navbar .nav{
+        display: none;
+    }
+    header .navbar .icons {
+        justify-content: end;
+    }
+    .homebanner{
+        padding: 100px 0px;
+    }
+    .homebanner p {
+        width: 100%;
+    }
+    .banner .imageGrid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .banner .imageGrid .gridimg{
+        width: 100%;
+    }
+}
+@media (min-width:576px) {
+    header .navbar .icons .barbtn{
+        display: block;
+    }
+    header .navbar .nav{
+        display: none;
+    }
+    header .navbar .icons {
+        justify-content: end;
+    }
+     .homebanner{
+        padding: 100px 0px;
+    }
+    .banner .imageGrid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .banner .imageGrid .gridimg{
+        width: 100%;
+    }
+    
+}
+@media (min-width:768px) {
+    /* header is inherit values */
+     .homebanner{
+        padding: 140px 0px;
+    }
+    .banner .imageGrid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .banner .imageGrid .gridimg{
+        width:50%;
+    }
+}
+@media (min-width:992px) {
+    header .navbar .icons .barbtn{
+        display: none;
+    }
+    header .navbar .nav{
+        display: flex;
+    }
+    header .navbar .icons {
+        justify-content: center;
+    }
+     .homebanner{
+        padding: 180px 0px;
+    }
+    .banner .imageGrid{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .banner .imageGrid .gridimg{
+        width:33.33%;
+    }
+}
+@media (min-width:1200px) {
+    
+}
