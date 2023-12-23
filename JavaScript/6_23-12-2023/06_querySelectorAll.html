@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+    </div>
+
+    <script>
+        // var mainbox = document.querySelector(".main");
+        var boxes = document.querySelectorAll(".box");
+        for (var i = 0; i < boxes.length; i++) {
+            boxes[i].style.height = "100px"
+            boxes[i].style.width = "100px"
+            boxes[i].style.backgroundColor = "green"
+            boxes[i].style.margin = "10px"
+        }
+    </script>
+</body>
+
+</html>
