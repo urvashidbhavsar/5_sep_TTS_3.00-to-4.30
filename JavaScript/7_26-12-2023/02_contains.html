@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            color: blue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="checkClass()">click to show</button>
+
+    <h1 class="title" id="title">Hello user</h1>
+
+    <script>
+        function checkClass() {
+            let h1 = document.querySelector("#title");
+            if (h1.classList.contains("title") == true) {
+                alert("class exist")
+            } else {
+                alert("not exist")
+            }
+        }
+    </script>
+</body>
+
+</html>

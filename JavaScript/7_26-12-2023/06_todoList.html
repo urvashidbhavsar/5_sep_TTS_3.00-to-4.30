@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="">
+        <input type="text" name="" id="userinp">
+        <button onclick="addValue()">click to add</button>
+    </div>
+    <ul></ul>
+    <div class="todolist">
+        <div class="list"></div>
+    </div>
+
+    <script>
+        function addValue() {
+            let inp = document.getElementById("userinp");
+            if (inp.value == "") {
+                alert("enter value")
+            } else {
+                let list = document.createElement("li");
+                let listText = document.createTextNode(inp.value);
+                list.append(listText);
+                document.querySelector("ul").append(list)
+                inp.value = ""
+            }
+        }
+    </script>
+</body>
+
+</html>

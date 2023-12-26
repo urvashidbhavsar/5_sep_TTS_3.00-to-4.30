@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myimg {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="setValue()">set attribute</button>
+    <hr>
+    <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
+        alt="">
+
+    <script>
+        function setValue() {
+            let i = document.querySelector("img");
+            // i.setAttribute("width", "300px")
+            // i.setAttribute("class", "myimg")
+            i.setAttribute("style", "width:500px")
+        }
+    </script>
+</body>
+
+</html>
