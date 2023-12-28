@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var color = ["pink", "red", "blue", "green", "black"]
+        console.log(color);
+
+        // to print single array value
+        console.log(color[0]);
+        console.log(color[4]);
+        console.log("================================");
+
+        // use loop to print array value
+        for (var i = 0; i < color.length; i++) {
+            console.log(`[${i}] => ${color[i]}`);
+        }
+        console.log("================================");
+        for (const arr of color) {
+            console.log(arr);
+        }
+        console.log("================================");
+        color.forEach(element => {
+            console.log(element);
+        });
+
+    </script>
+</body>
+
+</html>

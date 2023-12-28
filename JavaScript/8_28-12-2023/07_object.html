@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var person = {
+            firstname: "urvashi",
+            lastname: "rathod",
+            mobileno: 9874563210
+        }
+        console.log(person);
+
+        // single value print
+        console.log(person.firstname);
+        console.log("------");
+        for (const per in person) {
+            if (Object.hasOwnProperty.call(person, per)) {
+                console.log(`${per} => ${person[per]}`);
+            }
+        }
+    </script>
+</body>
+
+</html>
