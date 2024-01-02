@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            border: 1px solid black;
+            padding: 10px;
+            width: 600px;
+        }
+
+        .field {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+        }
+
+        .msg {
+            color: red;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="form">
+            <div class="field">
+                <div>
+                    <label for="">Enter Mobile No : </label>
+                </div>
+                <div>
+                    <input type="text" name="" id="mobileno" onblur="return checkMobileNo()"
+                        onkeyup="return checkUserNo()" maxlength="10">
+                </div>
+                <div>
+                    <span id="msg" class="msg"></span>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <button onclick="return checkMobileNo()">click here</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        function checkMobileNo() {
+            let mobile = document.getElementById("mobileno")
+            if (mobile.value == "" || mobile.value == null) {
+                document.getElementById("msg").innerHTML = "Enter Mobile No";
+                mobile.classList.add("error")
+                mobile.focus()
+            }
+            return false;
+        }
+        function checkUserNo() {
+            let mobile = document.getElementById("mobileno")
+            let ptn = /^[0-9]*$/
+            let start = /^[6-9]/
+            if (!(ptn.test(mobile.value)) || !(start.test(mobile.value))) {
+                document.getElementById("msg").innerHTML = "Enter proper Number"
+                mobile.classList.add("error")
+            }
+            else if (mobile.value.length < 10) {
+                document.getElementById("msg").innerHTML = "Enter 10 digits"
+            }
+            else {
+                document.getElementById("msg").innerHTML = ""
+                mobile.classList.remove("error")
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

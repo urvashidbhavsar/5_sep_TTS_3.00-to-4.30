@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            border: 1px solid black;
+            padding: 10px;
+            width: 600px;
+        }
+
+        .field {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+        }
+
+        .msg {
+            color: red;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="form">
+            <div class="field">
+                <div>
+                    <label for="">Enter name : </label>
+                </div>
+                <div>
+                    <input type="text" name="" id="first" onblur="return checkName()" onkeyup="return checkUserName()">
+                </div>
+                <div>
+                    <span id="msg" class="msg"></span>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <button onclick="return checkName()">click here</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        function checkName() {
+            let fname = document.getElementById("first")
+            if (fname.value == "" || fname.value == null) {
+                document.getElementById("msg").innerHTML = "Enter name";
+                fname.classList.add("error")
+                fname.focus()
+            }
+            return false;
+        }
+        function checkUserName() {
+            let fname = document.getElementById("first")
+            let ptn = /^[a-zA-Z]*$/
+            // let ptn = /^[a-zA-Z.\s]*$/ => for space allowed
+            if (!(ptn.test(fname.value))) {
+                document.getElementById("msg").innerHTML = "enter proper name"
+                fname.classList.add("error")
+            } else if (fname.value.length < 2) {
+                document.getElementById("msg").innerHTML = "enter atleast 2 character"
+                fname.classList.add("error")
+            } else {
+                document.getElementById("msg").innerHTML = ""
+                fname.classList.remove("error")
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

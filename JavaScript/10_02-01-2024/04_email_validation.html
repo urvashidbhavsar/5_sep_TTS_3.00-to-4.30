@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            border: 1px solid black;
+            padding: 10px;
+            width: 600px;
+        }
+
+        .field {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+        }
+
+        .msg {
+            color: red;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="form">
+            <div class="field">
+                <div>
+                    <label for="">Email Address : </label>
+                </div>
+                <div>
+                    <input type="text" name="" id="mail" onblur="return checkMail()" onkeyup="return checkUserEmail()">
+                </div>
+                <div>
+                    <span id="msg" class="msg"></span>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <button onclick="return checkMail()">click here</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        function checkMail() {
+            let email = document.getElementById("mail")
+            if (email.value == "" || email.value == null) {
+                document.getElementById("msg").innerHTML = "Enter Email";
+                email.classList.add("error")
+                email.focus()
+            }
+            return false;
+        }
+        function checkUserEmail() {
+            let email = document.getElementById("mail")
+            // let ptrn = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            let ptrn = /^[a-z0-9\.#$%^]+@[a-z]+\.[a-z]{2,3}$/
+            if (ptrn.test(email.value)) {
+                document.getElementById("msg").innerHTML = "true"
+                email.classList.remove("error")
+            } else {
+                document.getElementById("msg").innerHTML = "false"
+                email.classList.add("error")
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>
