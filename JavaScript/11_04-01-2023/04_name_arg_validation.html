@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            border: 1px solid black;
+            padding: 10px;
+            width: 600px;
+        }
+
+        .field {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+        }
+
+        .msg {
+            color: red;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="form">
+            <div class="field">
+                <div>
+                    <label for="">Firstname : </label>
+                </div>
+                <div>
+                    <input type="text" name="" id="first" onblur="return checkNameField(this, 'msg1')"
+                        onkeyup="checkUserName(this, 'msg1')">
+                </div>
+                <div>
+                    <span id="msg1" class="msg"></span>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <label for="">MiddleName : </label>
+                </div>
+                <div>
+                    <input type="text" name="" id="middle" onblur="return checkNameField(this, 'msg2')"
+                        onkeyup="checkUserName(this, 'msg2')">
+                </div>
+                <div>
+                    <span id="msg2" class="msg"></span>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <label for="">Lastname : </label>
+                </div>
+                <div>
+                    <input type="text" name="" id="last" onblur="return checkNameField(this, 'msg3')"
+                        onkeyup="checkUserName(this, 'msg3')">
+                </div>
+                <div>
+                    <span id="msg3" class="msg"></span>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <button onclick="return checkName()">click here</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        function checkName() {
+            let fname = document.getElementById("first")
+            if (fname.value == "" || fname.value == null) {
+                document.getElementById("msg").innerHTML = "Enter name";
+                fname.classList.add("error")
+                fname.focus()
+            }
+            return false;
+        }
+        function checkNameField(blank, msg) {
+            if (blank.value == "" || blank.value == null) {
+                document.getElementById(msg).innerHTML = "Please fill value"
+                blank.classList.add("error")
+            }
+            return false
+        }
+        function checkUserName(input, msg) {
+            let ptn = /^[a-zA-Z]*$/
+            // let ptn = /^[a-zA-Z.\s]*$/ => for space allowed
+            if (!(ptn.test(input.value))) {
+                document.getElementById(msg).innerHTML = "enter proper name"
+                input.classList.add("error")
+            } else if (input.value.length < 2) {
+                document.getElementById(msg).innerHTML = "enter atleast 2 character"
+                input.classList.add("error")
+            } else {
+                document.getElementById(msg).innerHTML = ""
+                input.classList.remove("error")
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>

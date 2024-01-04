@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            border: 1px solid black;
+            padding: 10px;
+            width: 700px;
+        }
+
+        .field {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+        }
+
+        .msg {
+            color: red;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        input:focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div class="form">
+            <div class="field">
+                <div>
+                    <label for="">Gender : </label>
+                </div>
+                <div>
+                    <input type="radio" name="gen" id="male" onblur="return checkValidate()">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female">
+                    <label for="">Female</label>
+                </div>
+                <div>
+                    <span id="msg1" class="msg"></span>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <label for="">Subject : </label>
+                </div>
+                <div>
+                    <input type="checkbox" name="html" id="c1">
+                    <label for="">html</label>
+                    <input type="checkbox" name="css" id="c2">
+                    <label for="">css</label>
+                    <input type="checkbox" name="js" id="c3">
+                    <label for="">js</label>
+                </div>
+                <div>
+                    <span id="msg2" class="msg"></span>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <label for="">city : </label>
+                </div>
+                <div>
+                    <select name="" id="list">
+                        <option value="-1">---select---</option>
+                        <option value="">surat</option>
+                        <option value="">bharuch</option>
+                    </select>
+                </div>
+                <div>
+                    <span id="msg3" class="msg"></span>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <button onclick="return checkValidate()">click here</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        function checkValidate() {
+            let m = document.getElementById("male");
+            let f = document.getElementById("female")
+            if (m.checked == false && f.checked == false) {
+                document.getElementById("msg1").innerHTML = "select value"
+            } else {
+                document.getElementById("msg1").innerHTML = ""
+            }
+
+            let c1 = document.getElementById("c1")
+            let c2 = document.getElementById("c2")
+            let c3 = document.getElementById("c3")
+            if (c1.checked == false && c2.checked == false && c3.checked == false) {
+                document.getElementById("msg2").innerHTML = "select value"
+            } else {
+                document.getElementById("msg2").innerHTML = ""
+            }
+
+            let city = document.getElementById("list");
+            if (city.value == "-1") {
+                document.getElementById("msg3").innerHTML = "select city"
+            } else {
+                document.getElementById("msg3").innerHTML = ""
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>
