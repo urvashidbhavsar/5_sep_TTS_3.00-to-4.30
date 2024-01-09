@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/* ============== */
+header{
+    /* background-color: rgb(8, 43, 74); */
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.9s ease;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header .topheader{
+    position: relative;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+header .navbar .logo h1{
+    color: white;
+    font-size: 40px;
+}
+header .navbar .btn{
+    height: 35px;
+    width: 35px;
+    background: transparent;
+    border: 2px solid white;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menubar{
+    position: fixed;
+    background-color: #000000cf;
+    height: 573px;
+    width: 300px;
+    left: -310px;
+    top: 10px;
+    transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.menubar .nav{
+    position: relative;
+}
+.menubar .nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+.menubar .nav a{
+    color: white;
+}
+.menubar .nav span{
+    color:white;
+    font-size: 12px;
+}
+.menubar .nav .closebtn{
+    height: 35px;
+    width: 35px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.menubar .cbtn{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+/* ================================
+    create a random css class for replace nav class
+    do not add in html structure. it add using js
+    ================================
+*/
+.menubar-new{
+    left:10px;
+}

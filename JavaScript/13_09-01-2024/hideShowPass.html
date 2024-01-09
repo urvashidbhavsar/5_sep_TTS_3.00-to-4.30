@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .PassForm {
+            border: 1px solid black;
+            width: 500px;
+            padding: 20px;
+        }
+
+        .PassForm .field {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+            padding: 5px 0;
+        }
+
+        input[type="password"],
+        [type="text"] {
+            height: 25px;
+            width: 100%;
+            border: 1px solid gray;
+            border-right: 0;
+            font-size: 20px;
+            letter-spacing: 1px;
+            padding-left: 10px;
+        }
+
+        input[type="password"]:focus-visible,
+        [type="text"]:focus-visible {
+            outline: none;
+        }
+
+        .icon {
+            height: 27px;
+            width: 25px;
+            border: 1px solid gray;
+            display: grid;
+            place-items: center;
+            border-left: 0;
+        }
+
+
+        .forminput {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="PassForm">
+        <div class="field">
+            <div>Enter Password</div>
+            <div class="forminput">
+                <input type="password" name="" id="pass">
+                <div class="icon" onclick="ShowPass('pass','icon1')">
+                    <span class="fa-regular fa-eye" id="icon1"></span>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <div>Confirm Password</div>
+            <div class="forminput">
+                <input type="password" name="" id="cpass">
+                <div class="icon" onclick="ShowPass('cpass','icon2')">
+                    <span class="fa-regular fa-eye" id="icon2"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function ShowPass(type, icon) {
+            let inptype = document.getElementById(type);
+            let i = document.getElementById(icon)
+            if (inptype.type == "password" && i.classList.contains("fa-eye") == true) {
+                inptype.type = "text"
+                i.classList.remove("fa-eye")
+                i.classList.add("fa-eye-slash")
+            } else {
+                inptype.type = "password"
+                i.classList.remove("fa-eye-slash")
+                i.classList.add("fa-eye")
+            }
+        }
+    </script>
+</body>
+
+</html>
