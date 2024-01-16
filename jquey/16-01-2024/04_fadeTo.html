@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 600px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="">
+
+    <script>
+        $(document).ready(function () {
+            $("img").mouseover(function () {
+                $("img").fadeTo(2000, 1)
+            })
+            $("img").mouseout(function () {
+                $("img").fadeTo(2000, 0.5)
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+jquery is a js library.
+
+version : jquery3
+3.7.1 
+
+website : https://jquery.com/ 
+
+use : 
+(1) offline = file download 
+(2) online = use cdn 
+
+syntax : 
+$ =>  represent jquery code 
+
+$(document).ready(function(){
+    $("selector").event_method(function(){
+        $("selector").jquery_method();
+    })
+})
+
+document = represent html document. document ready atleast once.
+selector => class, id, element, group, attribute etc
+
+
+in jquery there are lots of method for make a design effective.
+(1) effective function 
+(2) css function 
+(3) structure function  
+(4) ajax function 

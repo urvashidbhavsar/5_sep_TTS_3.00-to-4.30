@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 150px;
+            width: 150px;
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- there is 3 type of display function  : hide, show, toggle
+        these functions are main effected on element height and width
+    -->
+    <button id="btn1">hide</button>
+    <button id="btn2">show</button>
+    <button id="btn3">toggle</button>
+    <hr>
+
+    <div class="mydiv"></div>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".mydiv").hide(2000)
+            })
+            $("#btn2").click(function () {
+                $(".mydiv").show(2000)
+            })
+            $("#btn3").click(function () {
+                $(".mydiv").toggle(2000)
+            })
+        })
+    </script>
+</body>
+
+</html>
