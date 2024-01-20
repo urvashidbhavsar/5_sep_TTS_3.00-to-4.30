@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <header>
+        <div class="topheader">
+            <div class="container">
+                <!-- logo, navigation -->
+                <div class="navbar">
+                    <div class="logo">
+                        <h1>Livin</h1>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Pages</a></li>
+                            <li><a href="">Services</a></li>
+                            <li class="dropdown" id="dropdown">
+                                <a href="#">Account</a>
+                                <span class="fa-solid fa-angle-down"></span>
+                                <ul class="dropmenu">
+                                    <li><a href="">Login</a></li>
+                                    <li><a href="">Registration</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="togglebtn">
+                        <button class="btn" id="btn">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <img src="https://wallpaper.dog/large/20481283.png" alt="">
+    </section>
+
+    <script src="menubar.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="scrollChange.js"></script>
+</body>
+
+</html>

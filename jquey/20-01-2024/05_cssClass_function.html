@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title1 {
+            font-size: 40px;
+            color: crimson;
+            background-color: cadetblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .title2 {
+            font-size: 50px;
+            color: white;
+            background-color: blue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- there is 4 css class functions -->
+    <!-- addClass, removeClass, toggleClass, hasClass -->
+
+    <button id="btn1">add class</button>
+    <button id="btn2">Remove Class</button>
+    <button id="btn3">toggle Class</button>
+    <button id="btn4">Has Class</button>
+
+    <h1 class="head1">Hello user</h1>
+    <h1 class="head2">hello user</h1>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".head1").addClass("title1");
+            })
+            $("#btn2").click(function () {
+                $(".head1").removeClass("title1");
+            })
+            $("#btn3").click(function () {
+                $(".head2").toggleClass("title2");
+            })
+            $("#btn4").click(function () {
+                if ($(".head1").hasClass("title1")) {
+                    alert("class exist")
+                } else {
+                    alert("not exist")
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
