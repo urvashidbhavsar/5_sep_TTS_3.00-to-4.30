@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn1">text</button>
+    <button id="btn2">html</button>
+    <button id="btn3">val</button>
+    <button id="btn4">attr</button>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <div>
+        <input type="text" name="" id="user" value="">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#p1").text("<b>hello</b>")
+            })
+            $("#btn2").click(function () {
+                $("#p2").html("<b>hello</b>")
+            })
+            $("#btn3").click(function () {
+                $("#user").val("new user")
+            })
+            $("#btn4").click(function () {
+                $("#user").attr("type", "password")
+            })
+        })
+    </script>
+</body>
+
+</html>
