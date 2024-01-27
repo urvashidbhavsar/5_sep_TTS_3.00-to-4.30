@@ -1,0 +1,219 @@
+/* @import url(mediaQuery.css); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.pd-tb-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.pd-tb-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pd-tb-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+/* ======================================= */
+header{
+    background-color: rgba(0, 0, 0, 0.41);
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+}
+header .navbar .logo{
+    flex: 1;
+}
+header .navbar .logo h1{
+    font-size: 40px;
+    color: white;
+}
+header .navbar .logo h1 span{
+    color: #ff6700;
+}
+header .navbar .nav{
+    flex: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navbar .nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .navbar .nav ul li{
+    padding: 5px;
+}
+header .navbar .nav ul li a{
+    color: white;
+}
+header .navbar .nav ul li a.active{
+    color: #ff6700;
+}
+header .navbar .nav .usericon{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+header .navbar .nav .usericon .search{
+    height: 35px;
+    width: 35px;
+    background-color: rgba(255, 255, 255, 0.475);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    color: white;
+}
+header .navbar .nav .usericon button{
+    height: 50px;
+    padding: 0px 30px;
+    background-color: white;
+    color:#004e98;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+header .navbar .nav .usericon button:hover{
+    background-color: #004e98;
+    color: white;
+}
+header .navbar .icons{
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+header .navbar .icons span{
+    color: white;
+    font-size: 20px;
+}
+header .navbar .icons .barbtn{
+    display: none;
+}
+header .navbar .icons button{
+    background-color: #004e98;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ========================================================== */
+.homebanner{
+    background: url(images/homebanner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 180px 0px;
+    position: relative;
+    z-index: 1;
+}
+.homebanner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.52);
+    z-index: -1;
+}
+.homebanner .text{
+    font-size: calc(2.5vw + 25px);
+    color: white;
+}
+.homebanner .toptext{
+    font-weight: 500;
+}
+.homebanner .subtext{
+    font-weight: 700;
+}
+.homebanner p{
+    width: 400px;
+    color: white;
+    padding-bottom: 30px;
+}
+.homebanner button{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    transition: 0.5s ease;
+}
+.homebanner button:hover{
+    color: #ff6700;
+    background-color: white;
+}
+.banner .imageGrid{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.banner .imageGrid .gridimg{
+    width: 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+.banner .imageGrid .gridimg .text{
+    position: absolute;
+    top :0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    justify-content: center;
+}
+.banner .imageGrid .gridimg .text p{
+    color: #ff6700;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.banner .imageGrid .gridimg .text h1{
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+    line-height: 1;
+}
+.banner .imageGrid .gridimg .text h1 span{
+    font-weight: bold;
+}
+
+.banner .imageGrid img{
+    height: auto;
+    max-width: 100%;
+    filter: brightness(50%);
+    vertical-align: middle;
+    transition: 0.3s ease-in-out;
+}
+.banner .imageGrid .gridimg:hover img{
+    transform: scale(1.1);
+}

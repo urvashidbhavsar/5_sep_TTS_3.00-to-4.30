@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,
+        p,
+        ul,
+        li {
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        .set {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <button id="btn">click</button>
+    <hr>
+
+    <div class="main">main
+        <div class="sub-1"> sub-1
+            <ul class="list1"> ul
+                <li>List 1</li>
+                <li>List 2</li>
+            </ul>
+            <ul class="list2">
+                <li>New List</li>
+            </ul>
+        </div>
+        <div class="sub-2"> sub-2
+            <p>my paragraph</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                // $(".main").children(".sub-2").addClass("set")
+                $(".main").find("li").addClass("set")
+            })
+        })
+    </script>
+</body>
+
+</html>

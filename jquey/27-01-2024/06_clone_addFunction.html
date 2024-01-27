@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: cadetblue;
+        }
+
+        .mydiv2 {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <button id="btn1">append to</button>
+    <button id="btn2">prepend to</button>
+    <button id="btn3">insert before</button>
+    <button id="btn4">insert after</button>
+    <hr>
+
+    <div class="mydiv"></div>
+    <p class="p1">hello user</p>
+
+    <div class="mydiv2"></div>
+    <p class="p2">hello user, welcome</p>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".mydiv").clone(true).appendTo(".p1")
+            })
+            $("#btn2").click(function () {
+                $(".mydiv2").clone(true).prependTo(".p2")
+            })
+            $("#btn3").click(function () {
+                $(".mydiv").clone(true).insertBefore(".p1")
+            })
+            $("#btn4").click(function () {
+                $(".mydiv2").clone(true).insertAfter(".p2")
+            })
+        })
+    </script>
+
+</body>
+
+</html>

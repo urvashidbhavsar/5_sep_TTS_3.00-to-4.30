@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        .main {
+            display: flex;
+            gap: 20px;
+        }
+
+        .bgset {
+            background-color: rgb(40, 40, 228);
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <div class="main">
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+        <div class="box box3">box 3</div>
+        <div class="box box4">box 4</div>
+        <div class="box box5">box 5</div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // $(".box1").siblings(".box2").addClass("bgset");
+            // $(".box1").next().addClass("bgset");
+            // $(".box1").nextAll().addClass("bgset");
+            // $(".box1").nextUntil(".box5").addClass("bgset");
+            // $(".box5").prev().addClass("bgset");
+            // $(".box5").prevAll().addClass("bgset");
+            $(".box5").prevUntil(".box2").addClass("bgset");
+        })
+    </script>
+</body>
+
+</html>
