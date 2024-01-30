@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bxslider cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            height: 600px;
+            width: 100%;
+            /* transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1); */
+        }
+
+        .image1 {
+            background: url(https://images.wallpapersden.com/image/download/cool-red-mountains-4k_bG1mamyUmZqaraWkpJRnbW1lrWZtZWU.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        .image2 {
+            background: url(https://free4kwallpapers.com/uploads/originals/2020/10/13/digital-landscape-wallpaper.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        .image3 {
+            background: url(https://wallpapers.com/images/hd/sunset-pictures-l4lql05zgmoeviss.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        .image4 {
+            background: url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D) no-repeat center;
+            background-size: cover;
+        }
+
+        .images {
+            padding: 280px 100px;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: white;
+            text-shadow: 0px 0px 5px black;
+        }
+
+        .bx-wrapper {
+            box-shadow: none;
+            border: none;
+            background-color: transparent;
+        }
+
+        .bx-wrapper .bx-pager {
+            bottom: 20px;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background: red;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="PageSlider">
+        <div class="images image1">
+            <h1>Image 1</h1>
+        </div>
+        <div class="images image2">
+            <h1>Image 2</h1>
+        </div>
+        <div class="images image3">
+            <h1>Image 3</h1>
+        </div>
+        <div class="images image4">
+            <h1>Image 4</h1>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/vendor/jquery.easing.1.3.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.PageSlider').bxSlider({});
+        })
+    </script>
+</body>
+
+</html>
