@@ -1,0 +1,18 @@
+breakpoints are given to set responsive webpage.
+
+css                             bootstrap-class 
+max-width:576px                     -
+min-width:576px                     sm (small)
+min-width:768px                     md (medium)
+min-width:992px                     lg (large)
+min-width:1200px                    xl (extra large)
+min-width:1400px                    xxl (extra extra large)
+
+containers => 
+container class 
+container-fluid class 
+
+grid-system =>
+grid system gives a powerfull 12 column system to make your layout easily responsive.
+
+class => row and col-* (1 to 12)
