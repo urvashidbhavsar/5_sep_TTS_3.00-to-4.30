@@ -1,0 +1,27 @@
+description                                             class name 
+(1) input type 
+    text, date, number, datetime, month,                   form-control
+    week, password,file, email etc
+    textarea 
+
+(2) for label                                              form-label 
+
+(3) input type = radio/checkbox 
+    in input type                                          form-check-input 
+    in input type label                                    form-check-label 
+    for radio button vertically                            form-check 
+    for radio button horizotally                           form-check-inline 
+
+(4) for dropdown / select-option                            form-select 
+
+(5) input type color                                       form-control,
+                                                            form-control-color 
+
+(6) input type range                                       form-range
+
+(7) input group 
+    in parent div                                       input-group 
+    in input (form-control)
+    in label/button                                     input-group-text 
+
+(8) floating-label depends on element placeholder.
