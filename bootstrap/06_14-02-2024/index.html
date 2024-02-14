@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootsrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h2 class="m-0"><i class="bi bi-phone"></i>Echo</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuContent"
+                    aria-controls="menuContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menuContent">
+                    <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#LoginPage">Login</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        Registration
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="btn btn-outline-primary">Notifications
+                            <span class="badge text-bg-danger">4</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="homebanners">
+        <div id="HomeCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="slider1 slider text-center">
+                        <p class="display-3 text-center text-white pb-3">Expert in IT</h1>
+                        <p class="text-white text-center pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident nesciunt, quis in
+                            architecto corrupti quaerat ipsa non fugiat ipsum quos ut, quae ullam quam optio assumenda
+                            tempora hic. Reiciendis, maiores.</p>
+                        <button class="btn btn-danger btn-lg">Know More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slider2 slider text-center">
+                        <p class="display-3 text-center text-white pb-3">Expert in IT</h1>
+                        <p class="text-white text-center pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident nesciunt, quis in
+                            architecto corrupti quaerat ipsa non fugiat ipsum quos ut, quae ullam quam optio assumenda
+                            tempora hic. Reiciendis, maiores.</p>
+                        <button class="btn btn-danger btn-lg">Know More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slider3 slider text-center">
+                        <p class="display-3 text-center text-white pb-3">Expert in IT</h1>
+                        <p class="text-white text-center pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Provident nesciunt, quis in
+                            architecto corrupti quaerat ipsa non fugiat ipsum quos ut, quae ullam quam optio assumenda
+                            tempora hic. Reiciendis, maiores.</p>
+                        <button class="btn btn-danger btn-lg">Know More</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#HomeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#HomeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="pageinfo">
+        <div class="container py-5">
+            <div class="row g-2 justify-content-md-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="p-2">
+                        <p class="text-muted">01. VIDEO PRODUCTIONS</p>
+                        <h4 class="my-2">
+                            <a href="" class="text-primary-emphasis fw-medium">Stunning video sequence and impressing
+                                ideas are
+                                all here.</a>
+                        </h4>
+                        <p class="text-secondary">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet
+                            ipsum
+                            primis in faucibus
+                            orci dolor sit et amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="p-2">
+                        <p class="text-muted">01. VIDEO PRODUCTIONS</p>
+                        <h4 class="my-2">
+                            <a href="" class="text-primary-emphasis fw-medium">Stunning video sequence and impressing
+                                ideas are all here.</a>
+                        </h4>
+                        <p class="text-secondary">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet
+                            ipsum primis in faucibus
+                            orci dolor sit et amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="p-2">
+                        <p class="text-muted">01. VIDEO PRODUCTIONS</p>
+                        <h4 class="my-2">
+                            <a href="" class="text-primary-emphasis fw-medium">Stunning video sequence and impressing
+                                ideas are all here.</a>
+                        </h4>
+                        <p class="text-secondary">Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor amet
+                            ipsum primis in faucibus
+                            orci dolor sit et amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="CardDesign">
+        <div class="container py-5">
+            <div class="row g-3 justify-content-md-center">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/blog1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title pb-2">Best free Web templates</h5>
+                            <div class="d-flex gap-3 pb-2">
+                                <div><i class="bi bi-calendar"></i></div>
+                                <div>August 17, 2021</div>
+                            </div>
+                            <p class="card-text pb-2">Lorem ipsum dolor sit amet ad minus libero ullam ipsam quas earum!
+                            </p>
+                            <a href="#" class="link text-primary-emphasis fw-bold">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/blog2.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title pb-2">Best free Web templates</h5>
+                            <div class="d-flex gap-3 pb-2">
+                                <div><i class="bi bi-calendar"></i></div>
+                                <div>August 17, 2021</div>
+                            </div>
+                            <p class="card-text pb-2">Lorem ipsum dolor sit amet ad minus libero ullam ipsam quas earum!
+                            </p>
+                            <a href="#" class="link text-primary-emphasis fw-bold">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/blog3.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title pb-2">Best free Web templates</h5>
+                            <div class="d-flex gap-3 pb-2">
+                                <div><i class="bi bi-calendar"></i></div>
+                                <div>August 17, 2021</div>
+                            </div>
+                            <p class="card-text pb-2">Lorem ipsum dolor sit amet ad minus libero ullam ipsam quas earum!
+                            </p>
+                            <a href="#" class="link text-primary-emphasis fw-bold">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center pt-3">
+                    <button class="btn btn-danger btn-lg" data-bs-toggle="popover" data-bs-title="More About Us"
+                        data-bs-content="Visit our company">Know More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="alert alert-danger d-flex align-items-center alert-dismissible fade show" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+            <div class="ps-3">
+                An example alert with an icon
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <section class="faqQuestions">
+        <div class="container py-5">
+            <h1 class="text-center">FAQ</h1>
+            <div class="row pt-4">
+                <div class="col-12">
+                    <div class="accordion" id="questions">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques1" aria-expanded="true" aria-controls="ques1">
+                                    What is HTML with explain?
+                                </button>
+                            </h2>
+                            <div id="ques1" class="accordion-collapse collapse show" data-bs-parent="#questions">
+                                <div class="accordion-body">
+                                    HTML stands for Hyper Text Markup Language. HTML is the standard markup language for
+                                    creating Web pages. HTML describes
+                                    the structure of a Web page. HTML consists of a series of elements. HTML elements
+                                    tell the browser how to display the
+                                    content.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques2" aria-expanded="false" aria-controls="ques2">
+                                    What are the 5 uses of HTML?
+                                </button>
+                            </h2>
+                            <div id="ques2" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Structuring web pages. With tags and elements, we can define the headings,
+                                            paragraphs, and other contents of a web page.</li>
+                                        <li>Navigating the internet</li>
+                                        <li>Embedding images and videos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques3" aria-expanded="false" aria-controls="ques3">
+                                    Why is it called HTML?
+                                </button>
+                            </h2>
+                            <div id="ques3" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                <div class="accordion-body">
+                                    HTML (HyperText Markup Language) is the most basic building block of the Web. It
+                                    defines the meaning and structure of
+                                    web content. Other technologies besides HTML are generally used to describe a web
+                                    page's appearance/presentation (CSS)
+                                    or functionality/behavior (JavaScript).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques4" aria-expanded="false" aria-controls="ques4">
+                                    Who created HTML?
+                                </button>
+                            </h2>
+                            <div id="ques4" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                <div class="accordion-body">
+                                    The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there
+                                    have been many different versions of
+                                    HTML. The most widely used version throughout the 2000's was HTML 4.01, which became
+                                    an official standard in December
+                                    1999. Another version, XHTML, was a rewrite of HTML as an XML language.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark">
+        <div class="container py-5">
+            <h4 class="text-center text-white pb-3">Connect with us</h4>
+            <div class="d-flex gap-3 justify-content-center fs-5">
+                <div class="icon">
+                    <a href="" class="text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Youtube" data-bs-custom-class="custom-tooltip">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="" class="text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Whatsapp" data-bs-custom-class="custom-tooltip">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="" class="text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Instagram" data-bs-custom-class="custom-tooltip">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="" class="text-white" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Facebook" data-bs-custom-class="custom-tooltip">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade LoginPage" id="LoginPage" tabindex="-1" aria-labelledby="LoginPageLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="LoginPageLabel">User Login</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 pb-2">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="emailid" placeholder="email">
+                                <label for="emailid">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-12 pb-2">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="pass" placeholder="Password">
+                                <label for="pass">Password</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary">Login</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+
+</html>

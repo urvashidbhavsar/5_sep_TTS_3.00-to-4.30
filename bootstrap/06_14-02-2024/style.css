@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --bd-violet-bg:purple;
+    --bs-white:white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+.navbar-toggler {
+    border-radius: 0 !important;
+    border:1px solid black !important
+}
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+.slider1{
+    background: url(https://w0.peakpx.com/wallpaper/103/274/HD-wallpaper-laptop-red-sunset-background-laptop.jpg) no-repeat center;
+    background-size: cover;
+}
+.slider2{
+    background: url(https://wallpapers.com/images/hd/pastel-sea-stones-laptop-qc0dzvunw3mh3c8k.jpg) no-repeat center;
+    background-size: cover;
+}
+.slider3{
+    background: url(https://images.unsplash.com/photo-1609805620003-2a785a3b8a56?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww) no-repeat center;
+    background-size: cover;
+}
+.slider{
+    padding:180px 200px;
+    position: relative;
+    z-index: 1;
+}
+.slider::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000a0;
+    z-index: -1;
+}
+
+
+@media (max-width:576px) {
+    .slider{
+        padding:50px;
+    }
+}
+@media (min-width:576px) {
+    .slider{
+        padding:50px;
+    }
+}
+@media (min-width:768px) {
+    .slider{
+        padding:100px 150px;
+    }
+}
+@media (min-width:992px) {
+    .slider{
+        padding:150px 200px;
+    }
+}
+@media (min-width:1200px) {
+    .slider{
+        padding:180px 200px;
+    }
+}
+.card{
+    border: none !important;
+}
+.link::after{
+    content: "";
+    height: 2px ;
+    width: 80px;
+    background-color: red;
+    display: block
+}
+.accordion {
+    --bs-accordion-border-radius:0 !important;
+    --bs-accordion-inner-border-radius: 0 !important
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.custom-tooltip{
+    --bs-tooltip-bg: var(--bs-blue) !important;
+     --bs-tooltip-color: var(--bs-white) !important;
+}
+.LoginPage{
+    background-color: rgba(0, 0, 0, 0.735);
+}
+.LoginPage input[type="email"],input[type="password"] {
+     border: none;
+    border-radius: 0;
+    border-bottom: 2px solid black !important;
+}
+
+.LoginPage input[type="email"]:focus,
+input[type="password"]:focus {
+    box-shadow: none;
+}
